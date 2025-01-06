@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* For Chrome, Edge, Safari */
+.scroll_Bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  .scroll_Bar {
+    scrollbar-width: none;
+  }
+  
+  /* For Internet Explorer, Edge (older versions) */
+  .scroll_Bar {
+    -ms-overflow-style: none;
+  }
+  
+.img img {
+    object-fit: contain;
+    height: 60px;
+}
+.categoryContent{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 10px;
+
+}
+.categoryContent::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  .categoryContent {
+    scrollbar-width: none;
+  }
+  
+  /* For Internet Explorer, Edge (older versions) */
+  .categoryContent {
+    -ms-overflow-style: none;
+  }
+.product_title{
+    white-space: wrap;
+    overflow: hidden;
+    /* background-color: red; */
+    text-overflow: ellipsis;
+    width: 100%;
+}
